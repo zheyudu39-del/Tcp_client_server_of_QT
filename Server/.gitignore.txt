@@ -1,0 +1,14 @@
+# 忽略编译生成的目录
+build*/
+debug/
+release/
+
+# 忽略 Qt Creator 生成的本地配置文件
+*.pro.user
+
+# 忽略中间编译产物
+*.o
+*.obj
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
