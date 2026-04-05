@@ -24,4 +24,12 @@ void Widget::newClienthander()
     socket->peerPort();//获取端口号
     ui->iplineedit->setText(socket->peerAddress().toString());
     ui->portlineedit->setText(QString::number(socket->peerPort()));
+    //服务器接收客服端的消息
+    connect(socket,&QTcpSocket::readyRead,this,&Widget::clientInfoSlot);
+}
+void Widget::clientInfoSlot()
+{
+    QTcpSocket *s=(QTcpSocket*)sender();
+    ui->lineEdit->setText(QString(s->readAll()));
+
 }

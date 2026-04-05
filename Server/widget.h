@@ -21,6 +21,7 @@ public:
     ~Widget();
 private slots:
     void newClienthander();
+    void clientInfoSlot();
 
 
 

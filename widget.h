@@ -5,6 +5,7 @@
 #include<QTcpSocket>
 #include<QHostAddress>
 #include<QMessageBox>
+#include"chat1.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
