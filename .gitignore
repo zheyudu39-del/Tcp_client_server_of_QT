@@ -1,0 +1,13 @@
+# 编译产物
+build/
+bin/
+obj/
+
+# Qt Creator 配置文件
+*.pro.user
+*.CMakeLists.txt.user
+.qtcreator/
+
+# 系统文件
+.DS_Store
+Thumbs.db
